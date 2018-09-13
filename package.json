@@ -1,0 +1,36 @@
+{
+  "name": "express_mvc",
+  "version": "1.0.0",
+  "description": "Express Model-View-Controller",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skaziweb/express_mvc.git"
+  },
+  "keywords": [
+    "express",
+    "mvc"
+  ],
+  "author": "Alexey Kuz`min",
+  "license": "MIT License",
+  "bugs": {
+    "url": "https://github.com/skaziweb/express_mvc/issues"
+  },
+  "homepage": "https://github.com/skaziweb/express_mvc#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cluster": "^0.7.7",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "helmet": "^3.13.0",
+    "morgan": "^1.9.1",
+    "mysql": "^2.16.0"
+  }
+}
