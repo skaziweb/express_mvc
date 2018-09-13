@@ -24,8 +24,8 @@ if (cluster.isMaster) {
     var newPID = worker.process.pid;
     var oldPID = deadWorker.process.pid;
     // Log the event
-    console.log('worker '+oldPID+' died.');
-    console.log('worker '+newPID+' born.');
+    console.log('Worker '+oldPID+' died.');
+    console.log('New worker '+newPID+' start.');
   });
 } else {
     app.use('/', routes);
