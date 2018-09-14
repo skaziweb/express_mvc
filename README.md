@@ -9,6 +9,9 @@
 $ git clone https://github.com/skaziweb/express_mvc.git ProjectFolderName
 $ cd .\ProjectFolderName\
 $ npm install
+```
+## Start / Запуск
+```sh
 $ npm run dev
 ```
 ## Application folder structure / Cтруктура папок приложения
