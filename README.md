@@ -11,7 +11,7 @@ $ cd .\ProjectFolderName\
 $ npm install
 $ npm run dev
 ```
-## Application folder structure / структура папок приложения
+## Application folder structure / Cтруктура папок приложения
     controllers/    #app controllers
     models/         #app models
     routes/         #app routes
