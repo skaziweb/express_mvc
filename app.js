@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cluster = require('cluster');
 const numCPUs = require('os').cpus().length;
-var routes = require('./routes');
+let routes = require('./routes');
 const app = new express();
 let port = 8080
 
@@ -17,12 +17,12 @@ if (cluster.isMaster) {
     for (let i = 0; i < numCPUs; i++) {
         cluster.fork();
     }
-    cluster.on('exit', function(deadWorker, code, signal) {
+    cluster.on('exit', (deadWorker, code, signal) => {
     // Restart the worker
-    var worker = cluster.fork();
+    let worker = cluster.fork();
     // Note the process IDs
-    var newPID = worker.process.pid;
-    var oldPID = deadWorker.process.pid;
+    let newPID = worker.process.pid;
+    let oldPID = deadWorker.process.pid;
     // Log the event
     console.log('Worker '+oldPID+' died.');
     console.log('New worker '+newPID+' start.');

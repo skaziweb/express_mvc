@@ -4,7 +4,9 @@
   "description": "Express Model-View-Controller",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "dev": "nodemon app",
+    "build": "set NODE_ENV=production",
+    "start": "node app"
   },
   "repository": {
     "type": "git",
